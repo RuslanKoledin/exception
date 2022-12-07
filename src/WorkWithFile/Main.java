@@ -50,7 +50,7 @@ public class Main {
             System.out.println(scan.nextLine());
         }
         //УДАЛЕНИЕ СОДЕРЖИМОГО ФАЙЛА
-        //комментарий потому что файл при вызове метода файл уже удален
+        //удалите комментарий метода , для вызова и удаления содержимого файла 
 
             /*System.out.println("содержимое файла до удаления = " + file3);
             FileOutputStream fooStream = new FileOutputStream(file3, false);
