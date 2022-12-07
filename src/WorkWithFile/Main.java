@@ -1,7 +1,6 @@
 package WorkWithFile;
 
 import java.io.*;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -41,18 +40,17 @@ public class Main {
             exception.printStackTrace();
             System.out.println("файл недоступен!");
         }
-        //УДАЛЕНИЕ СОДЕРЖИМОГО ФАЙЛА
-        //при вызове метода файл уже удален
+
+        //файл до удаления
         System.out.println("___________________________________________");
         System.out.println("содержимое файла до удаления: ");
-        File file3 = new File("test");
+        File file3 = new File("test.txt");
         Scanner scan = new Scanner(file3);
         while (scan.hasNextLine()) {
             System.out.println(scan.nextLine());
         }
-
-
-        //комментарий потому что файл при запуске сразу удаляется
+        //УДАЛЕНИЕ СОДЕРЖИМОГО ФАЙЛА
+        //комментарий потому что файл при вызове метода файл уже удален
 
             /*System.out.println("содержимое файла до удаления = " + file3);
             FileOutputStream fooStream = new FileOutputStream(file3, false);

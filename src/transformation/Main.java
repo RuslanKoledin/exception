@@ -6,7 +6,7 @@ public class Main {
 
 
         //файл с рабочего стола
-        String path = "/Users/ruslan/Desktop/test.rtf";
+        String path = "/Users/ruslan/Desktop/test.txt.rtf";
         File file = new File(path);
 
         try{
