@@ -1,7 +1,6 @@
 package collection;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,15 +14,17 @@ public class Main {
         map.put("Saturday", "Суббота");
         map.put("Sunday", "Воскресенье");
 
-        for (Map.Entry<String,String> keyAndValues : map.entrySet()) {
-            System.out.println(keyAndValues.getKey() + " >> " +  keyAndValues.getValue());
+        Scanner scanner = new Scanner(System.in);
+        String scan = scanner.nextLine();
+
+        for (Map.Entry<String, String> keyAndValues : map.entrySet()) {
+            if (scan.equalsIgnoreCase(keyAndValues.getKey())) {
+                System.out.println(keyAndValues.getKey() + " >> " + keyAndValues.getValue());
+
+            }
         }
 
 
-
-
     }
-
-
 }
 
